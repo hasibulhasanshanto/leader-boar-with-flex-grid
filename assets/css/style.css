@@ -14,15 +14,15 @@ body {
     background-color: #E5E5E5;
 }
 
+a{
+    text-decoration: none;
+}
 .container {
     max-width: 870px; 
     margin: 0 auto; 
     padding: 0 30px; 
     /* border: 1px solid red; */
-}
-.btn-primary:hover {
-    box-shadow: 0px 2px 5px #888888;
-}
+} 
 
 /*============================
 * --- Navbar Section Start ---
@@ -69,6 +69,7 @@ body {
     font-weight: 400;
 }
 /* ### Navbar Section Ends ### */
+
 
 
 /*================================
@@ -138,7 +139,7 @@ body {
 .article-content{  
     padding: 10px 15px;
 }
-.article-content .title h3{
+.article-content .title h3 a{
     font-size: 20px;
     color: #000000;
     font-weight: 500;
@@ -146,9 +147,80 @@ body {
 .article-content .author{
     margin-top: 20px;
 }
-.article-content .author .name{
+.article-content .author .name a{
    color: #562EFF;
    font-size: 16px;
    font-weight: 500;
 }
 /* ### Top Area Section Ends ### */
+
+
+
+
+/*==================================
+* -- Latest Courses Section Start --
+==================================*/
+#latest-course{
+    margin-bottom: 30px; 
+}
+.latest-course{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.courses{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+.single-course{
+    padding: 16px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+.course-thumb{
+    margin-bottom: 20px;
+}
+.course-thumb img{
+    width: 100%;
+}
+.course-title{  
+    margin-bottom: 8px;
+}
+.course-title a{
+    color: #1E1E1E;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.course-author{
+    color: #ED6B4F;
+    font-weight: 14;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filled{
+    color: #FFC014;
+}
+.empty{
+    color: #AEAEAE;
+}
+
+.duration{
+    background-color: #FEE5DF; 
+    color: #FF4A60;
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* ### Latest Courses Section Ends ### */
